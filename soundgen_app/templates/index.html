@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ultrasound Generator (No JS)</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 40px auto; line-height: 1.6; }
+        form { border: 1px solid #ccc; padding: 20px; border-radius: 8px; }
+        label { display: block; margin-top: 10px; }
+        input { width: 100%; padding: 8px; margin-top: 4px; }
+        button { margin-top: 20px; padding: 10px 20px; font-size: 16px; }
+    </style>
+</head>
+<body>
+    <h1>Ultrasound Sound File Generator</h1>
+    <form method="post">
+        <label for="duration">Duration (seconds):</label>
+        <input type="number" name="duration" id="duration" value="60" min="1" step="1">
+
+        <label for="low_cut">Low Cut (Hz):</label>
+        <input type="number" name="low_cut" id="low_cut" value="17500" min="1" step="1">
+
+        <label for="high_cut">High Cut (Hz):</label>
+        <input type="number" name="high_cut" id="high_cut" value="22000" min="1" step="1">
+
+        <button type="submit">Generate & Download</button>
+    </form>
+</body>
+</html>
